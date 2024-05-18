@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: poppins, sans-serif;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+        background-size: 200%;
+        font-size: 1.2rem;
+        color: #fff;
+        font-family: poppins, sans-serif;
+        text-transform: uppercase;
+        margin: 1rem 0;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .btn-light-green {
+        background-color: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+        background-color: #32be8f;
+      }
+      .text-gray {
+        color: rgba(85, 85, 85, 0.49);
+      }
+      .fonts-big {
+        font-size: 2.9rem;
+        color: #333;
+      }
+      .bg-white-cu {
+        background-color: rgba(255, 255, 255, 0.192);
+      }
+      .parent {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .image1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 632px;
+        height: 100vh;
+      }
+      .image2 {
+        position: absolute;
+        top: 12rem;
+        left: 10rem;
+        width: 500px;
+      }
+      .font-size9{
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row vh-100 align-items-center">
+        <div class="col-6 d-none d-lg-block p-0">
+          <div class="parent">
+            <img class="image1 " src="images/wave.png" alt="" />
+            <img class="image2" src="images/bg.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <img
+                src="images/avatar.svg"
+                alt=""
+                width="100px"
+                height="100px"
+                class="rounded-circle mx-auto d-block"
+              />
+            </div>
+            <div class="col-6 justify-content-center mx-auto d-block text-center mt-3 mb-3">
+                <a href="" class="text-decoration-none fonts-big fw-bold"
+              >WELCOME</a>
+            </div>
+          </div>
+          <div class="col-6 mx-auto d-block">
+            <div class="input-group mb-3">
+              <span
+                class="input-group-text border-0 border-bottom bg-white-cu text-gray rounded-0"
+                ><i class="fa-solid fa-user"></i
+              ></span>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control border-0 border-bottom bg-white-cu rounded-0"
+                  id="floatingInputGroup1"
+                  placeholder="Username"
+                />
+                <label
+                  class="fw-bold text-gray rounded-0"
+                  for="floatingInputGroup1"
+                  >Username</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 mx-auto d-block">
+            <div class="input-group mb-1">
+              <span
+                class="input-group-text border-0 border-bottom bg-white-cu text-gray rounded-0"
+                ><i class="fa-solid fa-lock"></i
+              ></span>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control border-0 border-bottom bg-white-cu fw-bold rounded-0"
+                  id="floatingInputGroup1"
+                  placeholder="Password"
+                />
+                <label
+                  class="fw-bold text-gray rounded-0"
+                  for="floatingInputGroup1"
+                  >Password</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 justify-content-end m-auto d-flex">
+            <a href="#" class="text-decoration-none text-gray justify-content-end opacity-50  font-size9 fw-bold"
+              >Forgot password?</a
+            >
+          </div>
+          <div class="col-6 mx-auto d-block mb-1">
+            <input
+              type="button"
+              class="btn btn w-100 rounded-pill btn-lg fw-bold text-white"
+              value="Login"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
